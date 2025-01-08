@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Ordering System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="D:/HTML_folder/FoodOrderingSystem/images/logo.jpeg" alt="Restaurant Logo">
+            <h1>Our Restaurant</h1>
+        </div>
+        <nav>
+            <a href="#" id="homeLink">Home</a>
+            <a href="#" id="menuLink">Menu</a>
+            <a href="#">Order History</a>
+            <a href="#">Profile</a>
+        </nav>
+    </header>
+
+    <!-- Place Your Order Section -->
+    <div class="container" id="orderFormContainer">
+        <h2>Place Your Order</h2>
+        <form id="orderForm">
+            <label for="itemName">Item Name:</label>
+            <select id="itemName" required>
+                <option value="">Select an item</option>
+                <option value="Burger">Burger</option>
+                <option value="Cake">Cake</option>
+                <option value="Fries">Fries</option>
+                <option value="Ice Cream">Ice Cream</option>
+                <option value="Pizza">Pizza</option>
+                <option value="Noodles">Noodles</option>
+                <option value="Pasta">Pasta</option>
+                <option value="Salad">Salad</option>
+                <option value="Sandwich">Sandwich</option>
+            </select>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" min="1" value="1" required>
+
+            <label>Customizations:</label>
+            <div>
+                <input type="checkbox" id="extraCheese" value="Extra Cheese">
+                <label for="extraCheese">Extra Cheese</label>
+            </div>
+            <div>
+                <input type="checkbox" id="noOnions" value="No Onions">
+                <label for="noOnions">No Onions</label>
+            </div>
+
+            <label for="additionalInstructions">Additional Instructions:</label>
+            <textarea id="additionalInstructions" rows="4" placeholder="E.g., Add extra chili sauce"></textarea>
+
+            <button type="submit">Submit Order</button>
+            <button type="reset">Cancel</button>
+        </form>
+    </div>
+
+    <!-- Order Details Section -->
+    <div class="order-details-section" id="orderDetailsSection">
+        <h2>Order Details</h2>
+        <table class="order-table" id="orderTable">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Customizations</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dynamically added rows -->
+            </tbody>
+        </table>
+        <button id="backToOrder">Back to Order</button>
+    </div>
+
+    <!-- Menu Section (Hidden by default) -->
+    <div class="menu-section" id="menuSection" style="display: none;">
+        <h2>Menu</h2>
+        <div class="menu-items">
+            <!-- Menu Items -->
+            <div class="menu-item">
+                <img src="D:\HTML_folder\FoodOrderingSystem\images\burger.jpeg" alt="Burger" class="food-image">
+                <h3>Burger</h3>
+                <p class="price">₹150</p>
+            </div>
+            <div class="menu-item">
+                <img src="D:\HTML_folder\FoodOrderingSystem\images\cake.jpeg" alt="Cake" class="food-image">
+                <h3>Cake</h3>
+                <p class="price">₹250</p>
+            </div>
+            <div class="menu-item">
+                <img src="D:\HTML_folder\FoodOrderingSystem\images\fries.jpeg" alt="Fries" class="food-image">
+                <h3>Fries</h3>
+                <p class="price">₹120</p>
+            </div>
+            <div class="menu-item">
+                <img src="D:\HTML_folder\FoodOrderingSystem\images\icecream.jpeg" alt="Ice Cream" class="food-image">
+                <h3>Ice Cream</h3>
+                <p class="price">₹100</p>
+            </div>
+            <div class="menu-item">
+                <img src="D:\HTML_folder\FoodOrderingSystem\images\pizza.jpeg" alt="Pizza" class="food-image">
+                <h3>Pizza</h3>
+                <p class="price">₹500</p>
+            </div>
+            <div class="menu-item">
+                <img src="D:\HTML_folder\FoodOrderingSystem\images\noodles.jpeg" alt="Noodles" class="food-image">
+                <h3>Noodles</h3>
+                <p class="price">₹200</p>
+            </div>
+            <div class="menu-item">
+                <img src="D:\HTML_folder\FoodOrderingSystem\images\pasta.jpeg" alt="Pasta" class="food-image">
+                <h3>Pasta</h3>
+                <p class="price">₹350</p>
+            </div>
+            <div class="menu-item">
+                <img src="D:\HTML_folder\FoodOrderingSystem\images\salad.jpeg" alt="Salad" class="food-image">
+                <h3>Salad</h3>
+                <p class="price">₹80</p>
+            </div>
+            <div class="menu-item">
+                <img src="D:\HTML_folder\FoodOrderingSystem\images\sandwich.jpeg" alt="Sandwich" class="food-image">
+                <h3>Sandwich</h3>
+                <p class="price">₹120</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <p>Email: support@ourrestaurant.com</p>
+                <p>Phone: +91 (123) 456-7890</p>
+                <p>Address: 123 Food Street, India</p>
+            </div>
+            <div class="social-media">
+                <h3>Follow Us</h3>
+                <a href="https://facebook.com" target="_blank" class="social-link">Facebook</a>
+                <a href="https://twitter.com" target="_blank" class="social-link">Twitter</a>
+                <a href="https://instagram.com" target="_blank" class="social-link">Instagram</a>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2025 Our Restaurant. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

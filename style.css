@@ -1,0 +1,201 @@
+
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4e1d2;
+            color: #333;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #d2691e;
+            color: white;
+            padding: 10px 20px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .logo h1 {
+            font-size: 24px;
+            margin: 0;
+            font-family: 'Brush Script MT', cursive;
+        }
+
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        nav a:hover {
+            background-color: #b45f04;
+            border-radius: 4px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            border: 2px solid #d2691e;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #8b4513;
+        }
+
+        input[type="text"], input[type="number"], textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #d2691e;
+            color: white;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #b45f04;
+        }
+
+        .order-details-section {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            border: 2px solid #d2691e;
+            display: none; /* Initially hidden */
+        }
+
+        .order-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        .order-table th, .order-table td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .order-table th {
+            background-color: #d2691e;
+            color: white;
+        }
+
+        .order-table td {
+            background-color: #fff8dc;
+        }
+
+        .status {
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        .status.pending {
+            background-color: #ffc107;
+            color: #fff;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 10px;
+            background-color: #d2691e;
+            color: white;
+        }
+
+        #itemName {
+            width: 100%;  /* Make the dropdown full width of its container */
+            max-width: 600px;  /* Optional: Set a maximum width to prevent it from becoming too large */
+            padding: 10px;  /* Optional: Add padding for a better look */
+        }
+
+        /* Style the Menu Section */
+.menu-section {
+    text-align: center;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 1000px;
+    border: 2px solid #d2691e;
+}
+
+/* Style for Menu Items */
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.menu-item {
+    width: 250px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    background-color: #fff8dc;
+    border: 1px solid #ccc;
+}
+
+.menu-item img {
+    width: 250px;
+    height: 250px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.menu-item h3 {
+    font-size: 20px;
+    color: #d2691e;
+    margin: 10px 0;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #8b4513;
+}
+
+        
+    
